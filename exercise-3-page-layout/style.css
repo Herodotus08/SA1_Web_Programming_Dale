@@ -1,0 +1,88 @@
+/* Reset */
+
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Base styles */
+body {
+background-color: #dfdfdf;
+font-family: "Times New Roman", Times, serif;
+}
+
+/* Header */
+header {
+text-align: center;
+padding: 30px 20px;
+}
+
+h1 {
+font-size: 4em;
+margin-bottom: 20px;
+}
+
+/* Navigation */
+nav a {
+margin: 0 30px;
+color: blue;
+text-decoration: underline;
+font-size: 1.2em;
+}
+
+/* Intro section (float) */
+.intro {
+max-width: 900px;
+margin: 20px auto 40px auto;
+padding: 0 20px;
+}
+
+.intro img {
+float: right;
+width: 45%;
+margin-left: 20px;
+margin-bottom: 10px;
+}
+
+.intro p {
+font-size: 1.15em;
+line-height: 1.3;
+margin-bottom: 15px;
+}
+
+/* Clearfix */
+.intro::after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Gallery (flexbox) */
+.gallery {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.gallery-row {
+display: flex;
+width: 100%;
+height: 350px;
+}
+
+.gallery-row img,
+.gallery-row video {
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+/* Column widths */
+.w-60 {
+flex: 6;
+}
+
+.w-40 {
+flex: 4;
+}
